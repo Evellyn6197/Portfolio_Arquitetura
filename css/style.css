@@ -1,0 +1,48 @@
+:root {
+    --azul-principal: #0f1b53;
+    --dourado: #D4AF37;
+    --cinza-claro: #f8f9fa;
+}
+
+body {
+    font-family: 'Popins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--azul-principal);
+}
+
+.nav-link {
+    color: var(--dourado);
+    
+}
+
+.nav-link-hover {
+    color: #fff;
+}
+
+.hero {
+    height: 85vh;
+    background-image: url("fundoInicio.png" ); /* <<< coloque sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Botão dourado */
+.btn-hero {
+    background-color: var(--dourado);
+    color: var(--azul-principal);
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #f5dda1;
+    color: var(--azul-principal);
+}
+
