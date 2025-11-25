@@ -16,7 +16,7 @@ body {
 
 .nav-link {
     color: var(--dourado);
-    
+
 }
 
 .nav-link-hover {
@@ -25,7 +25,8 @@ body {
 
 .hero {
     height: 85vh;
-    background-image: url("fundoInicio.png" ); /* <<< coloque sua imagem aqui */
+    background-image: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* <<< coloque sua imagem aqui */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,3 +47,58 @@ body {
     color: var(--azul-principal);
 }
 
+.grid-galeria {
+    padding: 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: .3s ease;
+    filter: brightness(0.92);
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.03);
+    filter: brightness(0.75)
+}
+
+.grid-projetos {
+    column-count: 3;
+    column-gap: 30px;
+    padding: 40px 80px;
+}
+
+.projeto-card {
+    break-inside: avoid;
+    margin-bottom: 35px;
+}
+
+.projeto-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    filter: brightness(0.95);
+    transition: .3s;
+}
+
+.projeto-card img:hover {
+    transform: scale(1.02);
+    filter: brightness(0.85);
+}
+
+.projeto-card h5 {
+    color: var(--azul-principal);
+    font-weight: 600;
+    margin: 0;
+}
+
+.projeto-card span {
+    color: var(--dourado);
+    font-weight: 600;
+}
